@@ -1,13 +1,13 @@
 spring:
   profiles:
-    active: stage # 기본 환경 선택
+    active: local #로컬 개발 환경 선택
 
-# local 환경
+# Local 환경
 ---
 spring:
   profiles: local
   datasource:
-    data: classpath:data-h2.sql # 시작할때 실행시킬 script
+    data: classpath:data-h2.sql #시작할 때 실행시킬 script
   jpa:
     show-sql: true
     hibernate:
@@ -16,16 +16,5 @@ spring:
     console:
       enabled: true
 
-# stage 환경
----
-spring:
-  profiles: stage
-  datasource:
-    data: classpath:data-h2-stage.sql # 시작할때 실행시킬 script
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create-drop
-  h2:
-    console:
-      enabled: true
+Server:
+  port: 8080

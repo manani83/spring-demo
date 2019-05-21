@@ -1,0 +1,11 @@
+### 직접 JSON 사용
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "테스트 test",
+  "content": "테스트 test",
+  "author": "테스터"
+}
+
+###
