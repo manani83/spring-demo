@@ -39,7 +39,7 @@ deploy:
     bucket: springboot-webservice1-deploy-kmh # S3 버킷
     key: spring-webservice.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip
-    application: spring-webservice # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
+    application: springboot_webservice # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
     deployment_group: spring-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
