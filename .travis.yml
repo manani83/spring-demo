@@ -21,8 +21,8 @@ deploy:
     bucket: springboot-webservice1-deploy-kmh # 6-3-3에서 생성한 S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
-    acl: public_read
-    local_dir: deploy # before_deploy에서 생성한 디렉토리
+#    acl: public_read
+#    local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
     on:
       repo: manani83/spring-demo #Github 주소
